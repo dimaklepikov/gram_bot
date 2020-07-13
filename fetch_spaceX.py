@@ -12,4 +12,4 @@ def fetch_spacex_last_launch():
     images_urls = resp_body["links"]["flickr_images"]
     
     for num, url in enumerate(images_urls):
-        utils.file_downloader(url, f"spacex{num}.jpg")
+        utils.get_file(url, f"spacex{num}.jpg")

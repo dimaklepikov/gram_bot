@@ -1,4 +1,4 @@
-import requests
+
 import os
 from fetch_hubble import fetch_hubble_image, get_hubble_collection_pics
 from fetch_spaceX import fetch_spacex_last_launch

@@ -13,7 +13,7 @@ def fetch_hubble_image(*ids):
         resp_body = response.json()
         images = resp_body['image_files']
         full_url = "https:{}".format(images[-1]['file_url'])
-        utils.file_downloader(full_url, "hubble{}{}".format(id, os.path.splitext(full_url)[-1]))
+        utils.get_file(full_url, "hubble{}{}".format(id, os.path.splitext(full_url)[-1]))
 
 fetch_hubble_image(1)
 def get_hubble_collection_pics(collection):
