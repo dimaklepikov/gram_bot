@@ -14,8 +14,8 @@ if __name__ == '__main__':
     os.path.splitext("https://imgsrc.hubblesite.org/hvi/uploads/image_file/image_attachment/1239/full_jpg.jpg")
     get_hubble_collection_pics('wallpaper')
     load_dotenv(dotenv_path='.env', verbose=True)
-    username = os.getenv('username')
-    password = os.getenv('password')
+    username = os.getenv('USERNAME')
+    password = os.getenv('PASSWORD')
     
     for img in os.listdir(path='pictures'):
         image = Image.open('pictures/{}'.format(img))
